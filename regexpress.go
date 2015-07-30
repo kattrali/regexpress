@@ -48,6 +48,7 @@ func main() {
 }
 
 func exitWithError(err error) {
+	termbox.Close()
 	fmt.Println(err.Error())
 	os.Exit(1)
 }
